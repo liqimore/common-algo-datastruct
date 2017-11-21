@@ -162,6 +162,22 @@ class SeqList {
 		System.out.println("-------------------");
 		System.out.println("show the list node:");
 		slist.showAll(slist);
+		
+		
+		System.out.println("-------------------");
+		System.out.println("Insert a new Node now");
+		System.out.println("Please input position, key, words, and number");
+		NODE insertNode = new NODE();
+		int insertPos = read.nextInt();
+		insertNode.key = read.next();
+		insertNode.words = read.next();
+		insertNode.number = read.nextInt();
+		slist.insert(slist, insertPos, insertNode);
+		
+		System.out.println("-------------------");
+		System.out.println("show the list node:");
+		slist.showAll(slist);
+		
 		System.out.println("-------------------");
 		System.out.println("choose one to delete");
 		slist.delete(slist, read.nextInt());
@@ -169,6 +185,20 @@ class SeqList {
 		System.out.println("-------------------");
 		System.out.println("show the list node:");
 		slist.showAll(slist);
+		
+		System.out.println("-------------------");
+		System.out.println("getNodeByPos, input a pos:");
+		int searchPos = read.nextInt();
+		NODE posNode =  slist.getNodeByPos(slist, searchPos);
+		System.out.printf("NODE ->> Key: %s, Words: %s, Num: %d \n", posNode.key, posNode.words, posNode.number);
+		
+		System.out.println("-------------------");
+		System.out.println("getNodeByKey, input a key:");
+		String searchKey = read.next();
+		NODE keyNode =  slist.getNodeByKey(slist, searchKey);
+		System.out.printf("NODE ->> Key: %s, Words: %s, Num: %d \n", keyNode.key, keyNode.words, keyNode.number);
+		
+		System.out.println("----------------End Test----------------------");
 		
 	}
 }
