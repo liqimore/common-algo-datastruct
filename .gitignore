@@ -1,5 +1,7 @@
 # ignore all files
 *
+# don't ignore folder
+!*/
 # except those file extentions
 !*.c++
 !*.cc
