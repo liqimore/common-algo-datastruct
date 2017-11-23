@@ -48,19 +48,26 @@ SLNODE * init_slist(){
 
 //keep reading elements until manual stop
 //return the number of elements that recived
+
+
+
 int add_elem(SLNODE * slist){
-	int n;
 	int flag;
-	SLNODE * temp;
+	SLNODE * head;
+	head = slist; //head point to the head node, slist then moved to end
+	for(int i = 0; slist->next != NULL; i++){
+		slist++;
+	}
 	while (flag != 0) {
-		temp = (SLNODE *)malloc(sizeof(SLNODE));
+		SLNODE * temp = (SLNODE *)malloc(sizeof(SLNODE)); //allocate memory for a new node
+		//set new node values
 		printf("\ninput rank:");
 		scanf("%c",&temp->data.rank);
-		printf("input num:");
-		scanf("%d", &n);
-		temp->next = NULL;
-		slist->next = temp;
-		temp = NULL;
+		printf("\ninput num:");
+		scanf("%d", &temp->data.num);
+		temp->next = NULL;//newNode->next point to null, means the last node is the node added
+		slist->next = temp; // let tail point to the new node
+		temp = NULL;//clear temp pointer
 		printf("dou you wand to add more? 0 for stop, 1 for add more");
 		scanf("%d", &flag);
 	}
