@@ -16,7 +16,7 @@ class NODE {
 }
 /**
 * Defination of Seq List class
-*
+* this could think as a node like linked list
 */
 class seqType {
 	//max length of the seq list
