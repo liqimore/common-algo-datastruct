@@ -14,7 +14,7 @@ class StackType{
 	
 	//init a stack
 	//return the stack
-	public StackType initStack(){
+	public static StackType initStack(){
 		StackType temp = new StackType();
 		if (temp != null) {
 			//memory allocate success
@@ -93,9 +93,10 @@ class Stack {
 		//create a stack
 		StackType stack = new StackType();
 		stack = stack.initStack();
-		StackType st = stack.initStack(); //another stack
+		//static method is more prop
+		StackType st = StackType.initStack(); //another stack
 		
-		if (stack.isEmpty(stack)) {
+		if (st.isEmpty(stack)) {
 			System.out.println("Stack is Empty");
 		}
 		
