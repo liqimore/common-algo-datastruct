@@ -52,6 +52,8 @@ class TreeNode{
 			newNode.parent = 
 		}
 	}
+	
+	
 }
 
 
