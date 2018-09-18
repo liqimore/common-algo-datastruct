@@ -1,3 +1,10 @@
+package chapter1_String_Rotation;
+
+/**
+ * @Author: codefog
+ * @email: at20s@sina.com
+ * @Date: 2018/9/18 1:50 PM
+ */
 public class Others {
 
     /**

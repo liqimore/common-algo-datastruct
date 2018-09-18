@@ -1,5 +1,10 @@
-package string_reverse;
+package chapter1_String_Rotation;
 
+/**
+ * @Author: codefog
+ * @email: at20s@sina.com
+ * @Date: 2018/9/18 1:49 PM
+ */
 /**
  * @Author: codefog
  * @email: at20s@sina.com
